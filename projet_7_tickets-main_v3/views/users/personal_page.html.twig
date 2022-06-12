@@ -1,0 +1,87 @@
+{% extends "./../main.html.twig" %}
+
+
+{% block main %}
+
+	<section class="container-fluid">
+		<div class="row">
+			<div class='stories-container'>
+				<figure>
+					<picture class='personal'>
+						<img class='marque' src='/images/H&M-Logo.svg'></br>
+				</picture>
+				<p>H&M</p>
+			</figure>
+      	<figure>
+					<picture class='personal'>
+						<img class='marque' src='/images/H&M-Logo.svg'></br>
+				</picture>
+				<p>H&M</p>
+			</figure>
+      	<figure>
+					<picture class='personal'>
+						<img class='marque' src='/images/H&M-Logo.svg'></br>
+				</picture>
+				<p>H&M</p>
+			</figure>
+      	<figure>
+					<picture class='personal'>
+						<img class='marque' src='/images/H&M-Logo.svg'></br>
+				</picture>
+				<p>H&M</p>
+			</figure>
+      	<figure>
+					<picture class='personal'>
+						<img class='marque' src='/images/H&M-Logo.svg'></br>
+				</picture>
+				<p>H&M</p>
+			</figure>
+      	<figure>
+					<picture class='personal'>
+						<img class='marque' src='/images/H&M-Logo.svg'></br>
+				</picture>
+				<p>H&M</p>
+			</figure>
+      	<figure>
+					<picture class='personal'>
+						<img class='marque' src='/images/H&M-Logo.svg'></br>
+				</picture>
+				<p>H&M</p>
+			</figure>
+			</div>
+
+	</div>
+
+	<div class="row">
+		<article class="col-lg-8 ticket">
+			<div class="row"></div>
+		</article>
+    <h3 class='Display-3 ml-5'> Historique des achats </h3>
+    {% include "template/template_ticket.html.twig" %}
+		{# 
+		<article class="col-lg-4 ">
+		<div class="aside2 mt-3 mb-3"> #}
+		{# <p class="text-center">TICKETS SELECTIONNES</p>
+		    <div id="tickets_container">
+		    {% for orders in order %}
+		        <div class="container">
+		        <p>{{orders.display_name}}</p>
+		        <p>{{orders.date_order}}</p>
+		        <p>{{orders.pos_reference}}</p>
+		        <p>{{orders.full_product_name}}</p>
+		        <p>{{orders.qty}}</p>
+		        <p>{{orders.price_unit}}</p>
+		        <p>{{orders.amount_paid}}</p>
+		        <p>{{orders.website}}</p>
+		        <p>{{orders.street}}</p>
+		        <p>{{orders.zip}}</p>
+		        <p>{{orders.city}}</p>
+		        <p>{{orders.phone_sanitized}}</p>
+		    </div>    
+		    
+		    {% endfor %}
+		        </div>
+		    </div>
+		</article> #}
+	</section>
+</div>{% endblock %}

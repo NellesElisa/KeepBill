@@ -1,0 +1,231 @@
+<section class="container-fluid bg-white  fixed-bottom">
+	<div class="row">
+
+		{% if url == 'personal_page/:id' %}
+			<ul class="nav justify-content-center nav-tabs py-4 shadow-lg">
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/personal_page/">
+						<i class='fa fa-home lg'></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/favori/{{ user.id }}">
+						<i class="fa-solid fa-star lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/qrcode/{{ user.id }}">
+						<i class="fa-solid fa-qrcode lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/ticket/{{ user.id }}">
+						<i class="fa-solid fa-ticket lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/user/{{ user.id }}">
+						<strong>
+							<i class="fa-solid fa-user lg"></i>
+						</strong>
+					</a>
+				</li>
+			</ul>
+		{% elseif url == 'user/:id' %}
+			<ul class="nav justify-content-center nav-tabs py-4 shadow-lg">
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/personal_page/">
+						<i class='fa fa-home lg'></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/favori/{{ user.id }}">
+						<i class="fa-solid fa-star lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/qrcode/{{ user.id }}">
+						<i class="fa-solid fa-qrcode lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/ticket/{{ user.id }}">
+						<i class="fa-solid fa-ticket lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/user/{{ user.id }}">
+						<strong>
+							<i class="fa-solid fa-user lg"></i>
+						</strong>
+					</a>
+				</li>
+			</ul>
+		{% elseif url == 'favori/:id' %}
+			<ul class="nav justify-content-center nav-tabs py-4 shadow-lg">
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/personal_page/">
+						<i class='fa fa-home lg'></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/favori/{{ user.id }}">
+						<i class="fa-solid fa-star lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/qrcode/{{ user.id }}">
+						<i class="fa-solid fa-qrcode lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/ticket/{{ user.id }}">
+						<i class="fa-solid fa-ticket lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/user/{{ user.id }}">
+						<strong>
+							<i class="fa-solid fa-user lg"></i>
+						</strong>
+					</a>
+				</li>
+			</ul>
+		{% elseif url == 'ticket/:id' %}
+			<ul class="nav justify-content-center nav-tabs py-4 shadow-lg">
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/personal_page/">
+						<i class='fa fa-home lg'></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/favori/{{ user.id }}">
+						<i class="fa-solid fa-star lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/qrcode/{{ user.id }}">
+						<i class="fa-solid fa-qrcode lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/ticket/{{ user.id }}">
+						<i class="fa-solid fa-ticket lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/user/{{ user.id }}">
+						<strong>
+							<i class="fa-solid fa-user lg"></i>
+						</strong>
+					</a>
+				</li>
+			</ul>
+		{% elseif url == 'qrcode/:id' %}
+			<ul class="nav justify-content-center nav-tabs py-4 shadow-lg">
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/personal_page/">
+						<i class='fa fa-home lg'></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/favori/{{ user.id }}">
+						<i class="fa-solid fa-star lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/qrcode/{{ user.id }}">
+						<i class="fa-solid fa-qrcode lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/ticket/{{ user.id }}">
+						<i class="fa-solid fa-ticket lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/user/{{ user.id }}">
+						<strong>
+							<i class="fa-solid fa-user lg"></i>
+						</strong>
+					</a>
+				</li>
+			</ul>
+		{% elseif url == '/:id/update' %}
+			<ul class="nav justify-content-center nav-tabs py-4 shadow-lg">
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/personal_page/">
+						<i class='fa fa-home lg'></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/favori/{{ user.id }}">
+						<i class="fa-solid fa-star lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/qrcode/{{ user.id }}">
+						<i class="fa-solid fa-qrcode lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/ticket/{{ user.id }}">
+						<i class="fa-solid fa-ticket lg"></i>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link text-light py-2 px-2" href="/user/{{ user.id }}">
+						<strong>
+							<i class="fa-solid fa-user lg"></i>
+						</strong>
+					</a>
+				</li>
+			</ul>
+		{% elseif url =='/' %}
+			{# <li class="nav-item mx-3">
+				<a class="nav-link text-light py-3 px-3" href="/">
+					<strong>
+						<i class="fa-solid fa-house"></i>
+					</strong>
+				</a>
+			</li>
+			<li class="nav-item mx-3">
+				<a class="nav-link active py-3 px-3" href="/login">
+					<strong>
+						<i class="fa-solid fa-user"></i>
+					</strong>
+				</a>
+			</li>
+			<li class="nav-item mx-3">
+				<a class="nav-link text-light py-3 px-3" href="/subscrite">
+					<strong>
+						<i class="fa-solid fa-id-card"></i>
+					</strong>
+				</a>
+			</li> #}
+
+		{% elseif url == '/subscrite' %}
+			{# <li class="nav-item mx-3">
+				<a class="nav-link text-light py-3 px-3" href="/">
+					<strong>
+						<i class="fa-solid fa-house"></i>
+					</strong>
+				</a>
+			</li>
+			<li class="nav-item mx-3">
+				<a class="nav-link text-light py-3 px-3" href="/login">
+					<strong>
+						<i class="fa-solid fa-user"></i>
+					</strong>
+				</a>
+			</li>
+			<li class="nav-item mx-3">
+				<a class="nav-link active py-3 px-3" href="/subscrite">
+					<strong>
+						<i class="fa-solid fa-id-card"></i>
+					</strong>
+				</a>
+			</li> #}
+		{% endif %}
+	</div>
+</section>

@@ -1,0 +1,38 @@
+{% for order in orders %}
+{% if order.email  == user.mail %}
+<div class="flip-card mt-5">
+  <div class="flip-card-inner">
+    <div class="flip-card-front text-dark bg-light"> 
+    <ul class='list-unstyled'>
+    <li>{{ order.id }}</li>
+    <br>
+        <p>{{order.display_name}}</p>
+        <p>{{order.date_order}}</p>
+        <p>{{order.pos_reference}}</p>
+        <p>{{order.full_product_name}}</p>
+        
+        <p>{{order.website}}</p>
+        {# <p>{{order.street}}</p>
+        <p>{{order.zip}}</p>
+        <p>{{order.city}}</p> #}
+        <p>{{order.phone_sanitized}}</p>
+         {% for product in order.products %}
+              <li>{{product.full_product_name}}</li> 
+              <p>{{product.qty}}</p>
+              <p>{{product.price_unit}}</p>
+              
+         {% endfor %}
+         <p>{{order: order.amount_paid}}</p>
+    </ul>
+    </div>
+    <div class="flip-card-back">
+    <ul class='list-unstyled'>
+    <br>
+      
+    <li>Montant</li> 
+    </ul>
+    </div>
+  </div>
+</div>
+  {% endif %}
+{% endfor %}
